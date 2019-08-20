@@ -11,6 +11,7 @@ data_911 = pd.read_csv(data_file)
 
 #获取分类情况
 temp_list = data_911["title"].str.split(":").tolist()
+#cate_list = list(set([i[0] for i in temp_list]))
 cate_list = list(set([i[0] for i in temp_list]))
 print(temp_list)
 print(cate_list)

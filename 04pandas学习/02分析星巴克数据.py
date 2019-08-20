@@ -21,8 +21,6 @@ plt.xticks(range(len(_x)),_x)
 plt.show()
 #中国每个省的店铺数量
 #data_starbucks = data_starbucks[data_starbucks["CountryCode"] == "CN"]
-
-
 #data_grouped_city = data_starbucks.groupby(by=[data_starbucks["CountryCode"],data_starbucks["City"]])["Id"].count()
 data_grouped_city = data_starbucks[data_starbucks["CountryCode"] == "CN"].groupby(by="City")["Id"].count()
 data_city = data_grouped_city.sort_values(ascending=False)[:25]
