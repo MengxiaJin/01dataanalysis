@@ -10,7 +10,7 @@ print (data_year)
 data_average_rating = data_books.groupby(by="original_publication_year")["average_rating"].mean()
 
 print (data_average_rating)
-
+#画图
 _x = data_average_rating.index
 _y = data_average_rating.values
 
